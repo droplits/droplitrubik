@@ -1,0 +1,12 @@
+; $Id$
+name = "DroplitRubik"
+description = "Clean admin theme."
+base theme = "tao"
+core = "6.x"
+engine = "phptemplate"
+
+scripts[] = "js/rubik.js"
+stylesheets[screen][] = "style.css"
+stylesheets[screen][] = "icons.css"
+
+regions[content] = "Content"

@@ -1,0 +1,448 @@
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* typography.css */
+html {font-size:100.01%;}
+body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+a:focus, a:hover {}
+a {}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong {font-weight:bold;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+ul, ol {}
+ul {}
+ol {}
+dl {}
+dl dt {}
+dd {}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide {display:none;}
+.quiet {color:#666;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+/* .first {margin-left:0;padding-left:0;} */
+/* .last {margin-right:0;padding-right:0;} */
+
+
+
+body.tao { background:#fff; }
+div.limiter { width:960px; }
+
+/**
+ * Metrics ============================================================
+ */
+#branding,
+#page-title { margin:0px auto; }
+
+/**
+ * Header (minor) =====================================================
+ */
+#branding {
+  /* -moz-border-radius:5px 5px 0px 0px; */
+  /* -webkit-border-radius:5px 5px 0px 0px; */
+  /* background:url(images/cube.png) 0px 0px repeat-x; */
+  /* text-shadow:#000 0px 1px 0px; */
+  color:#888;
+  border:0px;
+  /* height:30px; */
+  padding:0px;
+  text-shadow: none;
+  }
+  #branding a { color:#888; }
+
+  #branding a:hover {
+    background:#474747;
+    color:#fff;
+    }
+
+  #branding div.breadcrumb {
+    padding:0px;
+    }
+
+  #branding div.breadcrumb span.breadcrumb-link {
+    /* background:url(images/cube.png) 100% -35px no-repeat; */
+    padding-right:5px;
+    }
+
+  #branding ul.links { padding:5px 10px; }
+
+/**
+ * Help ===============================================================
+ */
+#page-help { background:#404040; }
+
+#page-help div.limiter {
+  z-index:1;
+  position:relative;
+  }
+
+a#help-toggler {
+  position:absolute;
+  right:0px;
+  bottom:-15px;
+  left:auto;
+  width:auto;
+  height:auto;
+
+  -moz-border-radius:0px 0px 3px 3px;
+  -webkit-border-radius:0px 0px 3px 3px;
+
+  color:#888;
+  background:#333;
+
+  padding:0px 15px;
+  line-height:15px;
+  height:15px;
+
+  font-size:10px;
+  text-transform:uppercase;
+  text-indent:0px;
+  }
+
+  a#help-toggler:hover { color:#fff; }
+
+div#rubik-help {
+  -moz-border-radius:0px 0px 0px 3px;
+  -webkit-border-radius:0px 0px 0px 3px;
+  color:#ccc;
+  background:#333;
+  border:0px;
+  }
+
+div#rubik-help div.column-side .help-links { background:#222; }
+
+/**
+ * Header (major) =====================================================
+ */
+#page-title {
+  padding:0;
+  color:#373737;
+  }
+
+  #page-title a { color:#fff; }
+
+  #page-title h2.page-title {
+    letter-spacing:-1px;
+    font-size:24px;
+    font-weight:300;
+    padding:10px 0;
+    text-shadow:inherit;
+    }
+
+  #page-title ul.links {
+    letter-spacing:1px;
+    text-transform:uppercase;
+    float:right;
+    padding:10px 0px;
+    }
+
+  #page-title ul.links a {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    color:#888;
+    padding:5px 10px 5px 25px;
+    }
+
+  #page-title ul.links li.active a,
+  #page-title ul.links li a.active {
+    color:#fff;
+    background:#08c url(images/cube.png) 0px -160px repeat-x;
+    }
+
+  #page-title ul.links li a:hover { color:#fff; }
+
+/**
+ * Page elements ======================================================
+ */
+div.pager,
+#footer,
+#page,
+#tabs div.page-tabs {
+  background:none;
+  /* -moz-box-shadow:#ccc 0px 0px 3px; */
+  /* -webkit-box-shadow:#ccc 0px 0px 3px; */
+  /* -moz-border-radius:5px; */
+  /* -webkit-border-radius:5px; */
+  margin:0 auto;
+  }
+
+#header {
+  width:950px;
+  padding:5px;
+  }
+
+/**
+ * Tabs, pagers =======================================================
+ */
+#tabs div.page-tabs {
+  -moz-border-radius:0px 0px 5px 5px;
+  -webkit-border-radius:0px 0px 5px 5px;
+  margin:0 auto;
+  background:#f8f8f8;
+  }
+
+  div.pager,
+  #page div.pager {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+
+    background:#fff;
+    line-height:18px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#ccc #ddd #eee;
+    }
+
+  #tabs div.page-tabs ul.links {
+    float:none;
+    height:30px;
+    position:static;
+    padding:0px;
+    }
+
+  #tabs div.page-tabs li { padding:0px; }
+
+  div.pager a,
+  div.pager li.pager-current,
+  #tabs div.page-tabs li a,
+  #tabs div.page-tabs li a:hover,
+  #tabs div.page-tabs li.active a,
+  #tabs div.page-tabs li a.active {
+    color:#888;
+    font-weight:normal;
+    font-size:13px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    padding:5px 15px;
+    border:0px;
+    background:transparent;
+    }
+
+    div.pager a,
+    div.pager li.pager-current { padding:5px 10px; }
+
+  #page div.pager a:hover,
+  #tabs div.page-tabs li a:hover {
+    background:#fff;
+    color:#333;
+    }
+
+    #page div.pager a:hover { background:#eee; }
+
+  #page div.pager ul.pager-list li:first-child a,
+  #page div.pager ul.pager-list li.pager-current:first-child,
+  #tabs div.page-tabs li:first-child a {
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    }
+
+  #page div.pager ul.pager-links li:last-child a {
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    }
+
+  div.pager li.pager-current,
+  #tabs div.page-tabs li.active a,
+  #tabs div.page-tabs li a.active {
+    background:#08c url(images/cube.png) 0px -190px repeat-x;
+    color:#fff;
+    }
+
+/**
+ * Page ===============================================================
+ */
+#page {
+  width:960px;
+  padding:0px;
+  border:0px;
+  }
+
+/*#page * {
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  }
+ */
+/**
+ * Footer =============================================================
+ */
+#footer {
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  padding:10px 0px;
+  margin:0px auto 60px;
+  background:#f8f8f8;
+  }
+
+#footer div.feed-icons {
+  margin:0px;
+  padding:2px 5px;
+  background:transparent;
+  }
+
+/**
+ * Form goodness
+ */
+input.form-submit:hover {
+  border-color:#08a #08a #046;
+  background:#08c url(images/cube.png) 0px -190px repeat-x;
+  color:#fff;
+  }
+
+/**
+ * Blocks
+ */
+div.block h2.block-title {
+  background:#08c url(images/cube.png) 0px -190px repeat-x;
+  color:#fff;
+  }
+
+
+
+/**
+ * style.css overrides
+ */
+
+
+div.comment, div.node {
+  -moz-border-radius:0px;
+  -moz-box-shadow:0 1px 0 #FFFFFF;
+  background: none;
+  border-color:#CCCCCC #DDDDDD #EEEEEE;
+  border-style:none;
+  margin:0 0 10px;
+}
+
+
+div.form-item, form.confirmation ul {
+  -moz-box-shadow:0 0 10px #c7c7c7;
+  background: none;
+  border-style:none;
+  margin:0 0 10px;
+}
+
+div.page-content div.form-item:hover, div.page-content div.fieldset div.form-item:hover {
+  background-color:#fefefe;
+}
+
+
+input.form-autocomplete:hover, input.form-text:hover, textarea.form-textarea:hover, select.form-select:hover, div.form-item:hover input.form-autocomplete, div.form-item:hover input.form-text, div.form-item:hover textarea.form-textarea, div.form-item:hover select.form-select, input.form-autocomplete:focus, input.form-text:focus, textarea.form-textarea:focus, select.form-select:focus {
+
+}
+
+
+div.page-content div.form-item div.description {
+  background:#000000;
+  border-style:none;
+  border-width:0;
+}
+
+
+
+#user_links ul.links {
+  padding:5px 10px;
+}
+
+#user_links ul.links {
+  float:right;
+}
+#user_links a {
+  color:#888888;
+}
+#user_links a {
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  color:#333333;
+  float:left;
+  padding:0 10px;
+}
+#user_links a:hover {
+  background:#474747 none repeat scroll 0 0;
+  color:#FFFFFF;
+}
+
+
+
+
+div.block, .item-list, div.help-items ul, div.fieldset, div.form-item, form.confirmation ul, ul.admin-list, ul.node-type-list, div.admin-panel {
+  -moz-box-shadow:0 0 10px #E7E7E7;
+  border:1px solid #E7E7E7;
+}
+
+div.collapsible h2.fieldset-title a {
+  background:#000000;
+  color:#FFFFFF;  
+}
+
+
+span.cke_skin_kama {
+  -moz-border-radius:0px;
+  border: none;
+  padding:0px;
+}
+
+
+
+
+#themekey-properties tr.themekey-top-level {
+  border-style: none;
+  border-top-width: 0;
+}
+
+#themekey-properties tr {
+
+}
+
+
+input.form-autocomplete, input.form-text, textarea.form-textarea, select.form-select {
+  border-color:#c2c2c2;
+  border-style:solid;
+  border-width:2px;
+  color:#666666;
+  padding:2px;
+}
+
+
+div.form-item label {
+  color:#474747;
+  font-size:12px;
+}
