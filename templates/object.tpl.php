@@ -19,7 +19,7 @@
   <?php endif; ?>
 
   <?php if ($layout): ?>
-    <div class='column-main'><div class='column-wrapper'>
+    <div class='column-main FUCK'><div class='column-wrapper'>
   <?php endif; ?>
 
   <?php if (!empty($title)): ?>

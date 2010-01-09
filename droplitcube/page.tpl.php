@@ -1,6 +1,6 @@
 <?php include('header.inc'); ?>
-
 <div id='page' class='clear-block limiter page-content'>
+<div class="developer">PAGETPLPHP</div>
   <?php if ($show_messages && $messages): ?>
     <div id='console' class='clear-block'><?php print $messages; ?></div>
   <?php endif; ?>

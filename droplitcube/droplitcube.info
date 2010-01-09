@@ -5,7 +5,9 @@ base theme = "droplitrubik"
 core = "6.x"
 engine = "phptemplate"
 
+stylesheets[screen][] = "style.css"
 stylesheets[screen][] = "droplitcube.css"
+stylesheets[screen][] = "newstyle.css"
 
 ; Regions
 regions[header] = "Header"
@@ -52,6 +54,16 @@ layouts[columns][regions][] = "right"
 ; 2/1/1
 layouts[offset][name] = "Offset sidebars"
 layouts[offset][description] = "Main content with two offset sidebars."
+layouts[offset][stylesheet] = "layout-offset.css"
+layouts[offset][template] = "layout-offset"
+layouts[offset][regions][] = "header"
+layouts[offset][regions][] = "content"
+layouts[offset][regions][] = "left"
+layouts[offset][regions][] = "right"
+
+; 2/1/1
+layouts[offset][name] = "Crazy"
+layouts[offset][description] = "Main content with two sidebars."
 layouts[offset][stylesheet] = "layout-offset.css"
 layouts[offset][template] = "layout-offset"
 layouts[offset][regions][] = "header"

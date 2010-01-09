@@ -6,7 +6,8 @@ core = "6.x"
 engine = "phptemplate"
 
 scripts[] = "js/rubik.js"
-stylesheets[screen][] = "style.css"
+stylesheets[screen][] = "core.css"
 stylesheets[screen][] = "icons.css"
+stylesheets[screen][] = "style.css"
 
 regions[content] = "Content"

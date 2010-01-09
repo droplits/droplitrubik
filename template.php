@@ -99,6 +99,11 @@ function droplitrubik_theme() {
  * Preprocessor for theme('page').
  */
 function droplitrubik_preprocess_page(&$vars) {
+  // Show a warning if base theme is not present.
+  if (!function_exists('tao_theme') && user_access('administer site configuration')) {
+    drupal_set_message(t('The DroplitRubik theme requires the !tao base theme in order to work properly.', array('!tao' => l('Tao', 'http://code.developmentseed.org/tao'))), 'warning');
+  }
+
   // Split page content & content blocks.
   $vars['content_region'] = theme('blocks_content', TRUE);
 
@@ -106,7 +111,7 @@ function droplitrubik_preprocess_page(&$vars) {
   $vars['page_icon_class'] = ($item = menu_get_item()) ? _droplitrubik_icon_classes($item['href']) : '';
 
   // Add body class for theme.
-  $vars['attr']['class'] .= ' droplitrubik';
+  $vars['attr']['class'] .= ' rubik';
 
   // Body class for admin module.
   $vars['attr']['class'] .= ' admin-static';
@@ -120,7 +125,7 @@ function droplitrubik_preprocess_page(&$vars) {
   $vars['user_links'] = _droplitrubik_user_links();
 
   // Help text toggler link.
-  $vars['help_toggler'] = l(t('Help'), $_GET['q'], array('attributes' => array('id' => 'help-toggler', 'class' => 'toggler'), 'fragment' => 'rubik-help=1'));
+  $vars['help_toggler'] = l(t('Help'), $_GET['q'], array('attributes' => array('id' => 'help-toggler', 'class' => 'toggler'), 'fragment' => 'help-text=1'));
 
   // Clear out help text if empty.
   if (empty($vars['help']) || !(strip_tags($vars['help']))) {
@@ -212,7 +217,7 @@ function droplitrubik_preprocess_form_node(&$vars) {
  */
 function droplitrubik_preprocess_help(&$vars) {
   $vars['hook'] = 'help';
-  $vars['attr']['id'] = 'rubik-help';
+  $vars['attr']['id'] = 'help-text';
   $class = 'path-admin-help clear-block toggleable';
   $vars['attr']['class'] = isset($vars['attr']['class']) ? "{$vars['attr']['class']} $class" : $class;
   $help = menu_get_active_help();
@@ -259,12 +264,12 @@ function droplitrubik_preprocess_help_page(&$vars) {
 function droplitrubik_preprocess_node(&$vars) {
   $vars['layout'] = TRUE;
   $vars['title'] = menu_get_object() === $vars['node'] ? '' : $vars['title'];
-  $vars['attr']['class'] .= ' clear-block';
+  $vars['attr']['class'] .= ' clear-block preprocess_node';
 
   // Clear out template file suggestions if we are the active theme.
   // Other subthemes will need to manage template suggestions on their own.
   global $theme_key;
-  if (in_array($theme_key, array('droplitrubik', 'cube'), TRUE)) {
+  if (in_array($theme_key, array('droplitrubik', 'droplitcube'), TRUE)) {
     $vars['template_files'] = array();
   }
 }
@@ -308,16 +313,13 @@ function droplitrubik_breadcrumb($breadcrumb, $prepend = TRUE) {
   $output = '';
 
   // Add current page onto the end.
-  if (!drupal_is_front_page()) {
-    $item = menu_get_item();
-    $end = end($breadcrumb);
-    if ($end && strip_tags($end) !== $item['title']) {
-      $end = end($breadcrumb);
-      if ($end && strip_tags($end) !== $item['title']) {
-        $breadcrumb[] = "<strong>". check_plain($item['title']) ."</strong>";
-      }
-    }
-  }
+  // if (!drupal_is_front_page()) {
+  //   $item = menu_get_item();
+  //   $end = end($breadcrumb);
+  //   if ($end && strip_tags($end) !== $item['title']) {
+  //     $breadcrumb[] = "<strong>". check_plain($item['title']) ."</strong>";
+  //   }
+  // }
 
   // Remove the home link.
   foreach ($breadcrumb as $key => $link) {
@@ -328,10 +330,10 @@ function droplitrubik_breadcrumb($breadcrumb, $prepend = TRUE) {
   }
 
   // Optional: Add the site name to the front of the stack.
-  if ($prepend) {
-    $site_name = empty($breadcrumb) ? "<strong>". check_plain(variable_get('site_name', '')) ."</strong>" : l(variable_get('site_name', ''), '<front>', array('purl' => array('disabled' => TRUE)));
-    array_unshift($breadcrumb, $site_name);
-  }
+  // if ($prepend) {
+  //   $site_name = empty($breadcrumb) ? "<strong>". check_plain(variable_get('site_name', '')) ."</strong>" : l(variable_get('site_name', ''), '<front>', array('purl' => array('disabled' => TRUE)));
+  //   array_unshift($breadcrumb, $site_name);
+  // }
 
   foreach ($breadcrumb as $link) {
     $output .= "<span class='breadcrumb-link'>{$link}</span>";

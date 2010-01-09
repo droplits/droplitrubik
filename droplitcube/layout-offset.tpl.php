@@ -3,6 +3,7 @@
 <?php if ($header): ?><div id='header' class='limiter clear-block'><?php print $header ?></div><?php endif; ?>
 
 <div id ='page' class='clear-block limiter page-content'>
+<div class="developer">LAYOUT-OFFSET.TPL.PHP</div>
   <?php if ($show_messages && $messages): ?>
     <div id='console' class='clear-block'><?php print $messages; ?></div>
   <?php endif; ?>
