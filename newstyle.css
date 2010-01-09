@@ -1,0 +1,123 @@
+/**
+ * Content ============================================================
+ */
+div.help-page,
+div.comment,
+div.node {
+  border-style: none;
+  border-width: 0;
+  border-color: transparent;
+
+  background:transparent;
+  margin:0px 0px 10px;
+
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  }
+  
+div.pager,
+#header,
+#footer,
+#page,
+#tabs div.page-tabs {
+  background: none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  }
+
+#top {
+  background:transparent;
+}
+
+#branding {
+  -moz-border-radius:0;
+  background:transparent;
+  color:#888888;
+  font-size:11px;
+  height:30px;
+  text-shadow:none;
+}
+#branding div.breadcrumb {
+  padding:5px 0;
+}
+#branding div.breadcrumb span.breadcrumb-link {
+  background:transparent;
+  padding: 0;
+}
+
+#branding div.breadcrumb a, #branding div.breadcrumb strong {
+  padding:0 10px 0 0;
+}
+
+a.active {
+  color:#000;
+  text-decoration:none;
+  background-color: #e7e7e7;
+  }
+
+.views-field-edit-node a, div.view div.views-admin-links li a, div.panel-pane div.admin-links li a {
+  -moz-border-radius:10px;
+  background-color:#F4F4F4;
+  border-color:#E7E7E7 #E7E7E7 #D7D7D7;
+  border-style:solid;
+  border-width:1px;
+  color:#333333;
+  font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-size:10px;
+  height:auto;
+  margin-right:3px;
+  padding:2px 0.7em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.views-field-edit-node a:hover, div.view div.views-admin-links li a:hover, div.panel-pane div.admin-links li a:hover {
+  background-color:#EEFF33;
+}
+
+.node-links ul.links li a {
+  -moz-box-shadow:#fff 0px 0px 0px;
+  -webkit-box-shadow:#fff 0px 0px 0px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background-color:#F4F4F4;
+  border-color:#E7E7E7 #E7E7E7 #D7D7D7;
+  border-style:solid;
+  border-width:1px;
+  color:#333333;
+  font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-size:10px;
+  height:auto;
+  margin-right:7px;
+  padding:2px 0.7em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.developer {
+  background-color: #FFFF88;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  /* display: none; */
+}
+
+div.block {
+  margin:0;
+}
+
+.content-limiter {
+  width: 66.67%;
+  margin: 0 auto;
+  float: left;
+}
+
+
+div.column-main {
+  float:left;
+  width:100%;
+}

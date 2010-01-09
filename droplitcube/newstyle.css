@@ -1,0 +1,683 @@
+/**
+ * Content ============================================================
+ */
+div.help-page,
+div.comment,
+div.node {
+  border-style: none;
+  border-width: 0;
+  border-color: transparent;
+
+  background:transparent;
+  margin:0px 0px 1.5em;
+
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  }
+  
+div.pager,
+#header,
+#footer,
+#page,
+#tabs div.page-tabs {
+  background: none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  }
+
+#top {
+  background:transparent;
+}
+
+#branding {
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  background:transparent;
+  color:#888888;
+  font-size:12px;
+  height:4em;
+  text-shadow:none;
+}
+
+#branding a {
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  color:#888;
+  float:left;
+  padding:0px 5px 1px;
+  }
+  
+  #branding a:hover {
+    background:#e4e4e4;
+    color:#333;
+    }
+
+#branding div.breadcrumb {
+  padding:10px 0 11px;
+}
+#branding div.breadcrumb span.breadcrumb-link {
+  background:transparent url(../images/sprite.png) no-repeat scroll 100% -180px;
+  float:left;
+  padding:0 6px 0 0;  
+}
+
+a.active {
+  /* color:#000; */
+  /* text-decoration:none; */
+  /* background-color: #e7e7e7; */
+  }
+
+.views-field-edit-node a, div.view div.views-admin-links li a, div.panel-pane div.admin-links li a {
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background-color:#F4F4F4;
+  border-color:#E7E7E7 #E7E7E7 #D7D7D7;
+  border-style:solid;
+  border-width:1px;
+  color:#333333;
+  font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-size:10px;
+  height:auto;
+  margin-right:3px;
+  padding:2px 0.7em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.views-field-edit-node a:hover, div.view div.views-admin-links li a:hover, div.panel-pane div.admin-links li a:hover {
+  background-color:#EEFF33;
+}
+
+.node-links ul.links li a {
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background-color:#f0f0f0;
+  border-style:none;
+  border-width:0;
+  color:#A0A0A0;
+  font-size:.8em;
+  height:auto;
+  margin:0 0.46875em 0.46875em 0;
+  padding:0 0.46875em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+div.column-side ul.links a.active, div.column-side ul.links a:hover {
+  background:#A0A0A0;
+  color: #FFF;
+}
+
+.small {line-height:1.875em;}
+
+.developer {
+  background-color: #FFFF88;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  display: none;
+}
+
+div.block {
+  margin:0;
+}
+
+.content-limiter {
+  width: 66.67%;
+  margin: 0 auto;
+  float: left;
+}
+
+
+.node div.column-main {
+  float:left;
+  width:100%;
+}
+.node div.column-side {
+  /* float:right; */
+  width:220px;
+  margin: 0 0 0.75em 0.75em;
+}
+
+
+#user-links a {
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  color:#f0f0f0;
+  float:left;
+  padding:0 0.5em;
+  background:#a7a7a7;
+  }
+#user-links a:hover {
+    background:#474747;
+    color:#fff;
+    }
+#user-links ul.links {
+  float:right;
+  padding:0.375em 0 0.375em 0.5em;
+}
+#user-links ul.links li {
+  padding-left:0.375em;
+}
+
+/**
+ * Core overrides =========================================================
+ */
+  html.js input.form-autocomplete { background-position:100% 5px; }
+  html.js input.throbbing { background-position:100% -15px; }
+
+h2.fieldset-title, div.collapsible h2.fieldset-title a {
+  font-size:1em;
+}
+div.block {
+  -moz-box-shadow:none;
+  margin:0 0 1.5em;
+  border: none;
+}
+div.block div.block-content {
+  background-color:#f4f4f4;
+}
+div.block div.block-content, div.fieldset-content {
+  padding:0.75em;
+}
+div.content-wrapper {
+  margin:0; padding:0;
+  }
+div.block h2.block-title, div.admin-panel h3, h2.fieldset-title, div.collapsible h2.fieldset-title a {
+  padding:0.5em 10px;
+}
+  
+/**
+ * Events - to move to own css file =========================================================
+ */
+.view-events .views-row {
+  margin-bottom:1.5em;
+}
+.node-event .field-type-date {
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-box-shadow:#b0b0b0 0px 0px 3px;
+  -webkit-box-shadow:#b0b0b0 0px 0px 3px;
+  background-color: #f0f0f0;
+  width: 220px;
+  padding:0.5em;
+  margin-bottom: 1.5em;
+}
+
+.print-link {padding-bottom:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  calendar calendar table styles  */
+.calendar-calendar tr.odd, .calendar-calendar tr.even {
+  background-color:#fff;
+}
+.calendar-calendar table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:0 auto;
+  padding:0;
+  width: 100%; /* Setting at 100% causes problem in Internet Explorer. */
+}
+
+.calendar-calendar ul.links li a {
+  padding: 10px 10px 10px 0;
+}
+
+.calendar-calendar table td, .calendar-calendar table th {
+  border: 1px solid #e7e7e7;
+}
+
+.calendar-calendar .month-view table {
+  border:none;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+  /* IE needs a little help to get the side by side tables to the right size */
+.calendar-calendar .year-view td {
+  width:32%;
+  padding:1px;
+  border:none;
+}
+
+.calendar-calendar .year-view td table td {
+  width:13%;
+  padding:0;
+}
+
+.calendar-calendar tr {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+.calendar-calendar th {
+  color: #fff;
+  background-color: #ccc;
+  text-align: center;
+  margin:0;
+}
+.calendar-calendar th a {
+  font-weight: bold;
+  color: #fff;
+  background-color: #ccc;
+}
+.calendar-calendar td {
+  width: 12%; /* 14% is about 1/7 of total table width */
+  min-width: 12%;
+  border: 1px solid #e7e7e7;
+  color: #777;
+  text-align: right;
+  vertical-align: top;
+  margin: 0;
+  padding:0;
+}
+
+/* simplify the mini calendar by removing borders */
+.calendar-calendar .mini {
+  border:none;
+ }
+
+/* format for the week number in the first cell */
+.calendar-calendar td.week {
+  width:1%;
+  min-width:1%;
+  }
+.calendar-calendar .week {
+  clear:both;
+  font-style: normal;
+  color: #555;
+  font-size: 0.8em;
+}
+.calendar-calendar .week a {
+  font-weight:normal;
+}
+
+/* IE6 does not support min-height, using Min-Height fast hack from http://www.dustindiaz.com/min-height-fast-hack */
+.calendar-calendar .inner {
+  min-height:5em;
+  height:auto !important;
+  height:5em;
+  padding:0;
+  margin:0;
+}
+.calendar-calendar .inner div {
+  padding:0;
+  margin:0;
+}
+/* Make sure paragraphs buried in calendar cells use padding, not margins, for separation so the background color doesn't come through. */
+.calendar-calendar .inner p {
+  padding:0 0 .8em 0;
+  margin:0;
+}
+.calendar-calendar td a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.calendar-calendar td a:hover {
+  text-decoration: underline;
+}
+.calendar-calendar td.year, 
+.calendar-calendar td.month {
+  text-align: center;
+}
+
+/* format days of the week header cells */
+.calendar-calendar th.days {
+  color:#212121;
+  font-weight:bold;
+  background-color:#f0f0f0;
+  border:1px solid #E7E7E7;
+  text-align: center;
+  padding: 5px 0;
+  margin:0;
+ }
+ 
+
+/*  floating day number div  */
+.calendar-calendar div.day {
+  float: right;
+  text-align: center;
+  padding: 0.125em 0.25em;
+  margin: 0;
+  background-color: #f0f0f0;
+  border: 1px solid #e7e7e7;
+  border-width: 0 0 1px 1px;
+  clear:both;
+  width:1.5em;
+}
+
+/*  individual node container  */
+.calendar-calendar div.calendar {
+  background-color: #fff;
+  border: solid 1px #ddd;
+  text-align: left;
+  margin:0 .25em .25em 0;
+  width: 96%;
+  float:right; /* needed to keep IE from hiding the floating day number */
+  clear:both;
+}
+/* No floating of day view content because there is no floating day number */
+.calendar-calendar .day-view div.calendar {
+  float:none;
+  width:98%;
+  margin:1% 1% 0 1%;
+}
+
+.calendar-calendar div.title {
+  font-size:.8em;
+  text-align:center;
+}
+
+.calendar-calendar div.title a {
+  color: #000;
+}
+.calendar-calendar div.title a:hover {
+  color: #c00;
+}
+.calendar-calendar .content {
+  clear:both;
+  padding: 3px;
+  padding-left: 5px;
+}
+.calendar div.form-item {
+  white-space: normal;
+}
+
+table td.mini, 
+table th.mini, 
+table.mini td.week {
+  padding:0 1px 0 0;
+  margin:0;
+  }
+table td.mini a {
+  font-weight:normal;
+  }
+.calendar-calendar .mini-day-off {
+  padding:0px;
+}
+.calendar-calendar .mini-day-on {
+  padding:0px;
+}
+table .mini-day-on a {
+  text-decoration:underline;
+  }
+.calendar-calendar .mini .title {
+  font-size:.8em;
+  }
+.mini .calendar-calendar .week {
+  font-size:.7em;
+  }
+.mini-row {
+  width:100%;
+  border:none;
+}
+.mini{
+  width:32%;
+  vertical-align:top;
+  }
+
+
+/* formatting for the legend stripe and block */
+.calendar-calendar .stripe {
+  height: 5px;
+  width: auto;
+  font-size:1px !important;
+  line-height:1px !important;
+}
+.calendar-calendar .day-view .stripe {
+  width:100%;
+}
+table.calendar-legend {
+  background-color:#ccc;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+table.calendar-legend tr.odd .stripe,
+table.calendar-legend tr.even .stripe {
+  height:12px !important;
+  font-size:9px !important;
+  line-height:10px !important;
+}
+.calendar-legend td {
+  text-align:left;
+}
+
+.calendar-empty {
+  font-size:1px;
+  line-height:1px;
+}
+
+/* formatting for the full day view */  
+.calendar-calendar td.calendar-agenda-hour {
+  font-family:serif;
+  text-align:right;
+  border:none;
+  border-top:1px #333 dotted;
+  padding-top:.25em;
+  width:1%;
+}
+.calendar-calendar td.calendar-agenda-no-hours {
+  min-width:1%;
+}
+.calendar-calendar td.calendar-agenda-hour .calendar-hour {
+  font-size:1.2em;
+  font-weight:bold;
+}
+.calendar-calendar td.calendar-agenda-hour .calendar-ampm {
+  font-size:1em;
+}
+.calendar-calendar td.calendar-agenda-items {
+  border:1px #333 dotted;
+  text-align:left;
+}
+.calendar-calendar td.calendar-agenda-items div.calendar {
+  width:auto;
+  padding:.25em;
+  margin:0;
+}
+.calendar-calendar div.calendar div.inner .calendar-agenda-empty {
+  width:100%;
+  text-align:center;
+  vertical-align:middle;
+  padding:1em 0;
+  background-color:#fff;
+}
+
+/* the popup date selector for jumping to a new date */
+.calendar-date-select form {
+  text-align:right;
+  float:right;
+  width:25%;
+}
+.calendar-date-select div, 
+.calendar-date-select input, 
+.calendar-date-select label {
+  text-align:right;
+  padding:0;
+  margin:0;
+  float:right;
+  clear:both;
+}
+.calendar-date-select .description {
+  float:right;
+}
+.calendar-label {
+  font-weight:bold;
+  display:block;
+  clear:both;
+}
+
+.calendar-calendar div.date-nav {
+  background-color:transparent;
+  color:#000;
+  padding:1em;
+  width:auto;
+  border:medium none;
+}
+
+.calendar-calendar div.date-nav h3 {
+  color:#212121;
+}
+.calendar-calendar td.empty {
+  background:#f7f7f7;
+  border-color:#e7e7e7;
+}
+.calendar-calendar table.mini td.empty {
+  background:#fff;
+  border-color:#fff;
+}
+.calendar-calendar td div.day {
+  border:1px solid #e7e7e7;
+  border-top:none;
+  border-right:none;
+  margin-bottom:2px;
+}
+.calendar-calendar td .inner div,
+.calendar-calendar td .inner div a {
+  background-color: transparent;
+}
+/* Set small font size for all items in calendar div, themes can override this. */
+/* Use x-small instead of em to avoid multiplying effect in nested items. */
+.calendar-calendar div.calendar {
+  border:none;
+  font-size: inherit;
+}
+.calendar-calendar div.calendar .view-data-node-data-field-date-time-field-date-time-value {
+  font-size: x-small;
+}
+
+.calendar-calendar td .inner div.calendar div a {
+  border:none;
+  background: transparent;
+  padding:0;
+}
+.calendar-calendar td .inner div.calendar div {
+  border:none;
+  background:#FFFF88;
+  padding:2px 0;
+}
+.calendar-calendar td .inner div.calendar div.calendar-more,
+.calendar-calendar td .inner div.calendar div.calendar-more a {
+  color:#212121;
+  background:#fff;
+  text-align:right;
+}
+.calendar-calendar td .inner .view-field,
+.calendar-calendar td .inner .view-field a {
+  color:#212121;
+  font-weight:normal;
+}
+
+.calendar-calendar td span.date-display-single,
+.calendar-calendar td span.date-display-start,
+.calendar-calendar td span.date-display-end,
+.calendar-calendar td span.date-display-separator {
+  font-weight:bold;
+}
+.calendar-calendar td .inner div.day a {
+  color:#4b85ac;
+}
+.calendar-calendar tr td.today,
+.calendar-calendar tr.odd td.today,
+.calendar-calendar tr.even td.today {
+  background-color:#C3D6E4;
+}
+.calendar-calendar td .inner div.calendar div div.view-data-node-data-field-date-field-date-value {
+  border-bottom:1px solid #e0e0e0;
+}
+
+/* The following are not used by default but are available for themes */
+.calendar-calendar td.past {}
+.calendar-calendar td.future {}
+.calendar-calendar td.has-events {}
+.calendar-calendar td.has-no-events {}
+
+
+
+
+
+
+.calendar-calendar .year-view td .calendar-calendar {
+  padding:10px;
+}
+
+
+#footer {
+  font-size:1em;
+}
+#footer div.footer-message {
+  padding:0;
+}
+
+div.vertical-tabs {
+  font-size:0.8em;
+}
+div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
+  padding:0;
+}
+
+.ui-datepicker-next {
+  left:12.6em;
+}
+
+#ui-datepicker-div {
+  font-size:1.2em;
+}
+
+
+div.block, .item-list, div.help-items ul, div.fieldset, div.form-item, form.confirmation ul, ul.admin-list, ul.node-type-list, div.admin-panel {
+  margin:0 0 1.5em;
+}
+
+
+div.collapsed h2.fieldset-title a {
+  background:#F4F4F4 none repeat scroll 0 0;
+}
+
+div.form-item {
+  padding:0.75em;
+}
